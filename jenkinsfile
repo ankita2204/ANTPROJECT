@@ -8,7 +8,7 @@ pipeline{
 		}
   
 	  sh echo ' Project'
-	  sh java -jar dist/Main.jar 10		
+	  sh 'java -jar dist/Main.jar 10'		
        }
       }
 #    stage ('Build Image and Push to Dockerhub'){  
