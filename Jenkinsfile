@@ -13,9 +13,9 @@ pipeline{
 	stage ('Build Docker Image '){  
 	steps{ 
         sh """
-           sudo docker image build -t ant-app .
-           sudo docker tag ant-testinng ankita2204/ant-app
-           sudo docker push ant-testinng ankita2204/ant-app
+           docker image build -t ant-app .
+           docker tag ant-testinng ankita2204/ant-app
+           docker push ant-testinng ankita2204/ant-app
            """
         }
 }
