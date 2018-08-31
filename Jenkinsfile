@@ -19,7 +19,10 @@ pipeline{
            """
 	stage ('Deploy'){
 	steps{
+	sh """
 		docker container run --name myapp ankita0422/my-ant-app
+           """
+	
 	}	
 }
         }
