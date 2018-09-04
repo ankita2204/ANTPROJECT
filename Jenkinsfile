@@ -18,5 +18,6 @@ pipeline{
            sudo docker push ankita0422/my-ant-app
            """
 	}	
-}
+		}
         }
+}
