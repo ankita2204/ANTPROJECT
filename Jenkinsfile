@@ -17,12 +17,6 @@ pipeline{
            sudo docker tag my-ant-app ankita0422/my-ant-app
            sudo docker push ankita0422/my-ant-app
            """
-	stage ('Deploy'){
-	steps{
-	sh """
-		docker container run --name myapp ankita0422/my-ant-app
-           """
-	
 	}	
 }
         }
